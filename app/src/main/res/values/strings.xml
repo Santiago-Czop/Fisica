@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">"Fisica "</string>
+    <string name="Mu">μ</string>
+    <string name="Masa">Mass</string>
+    <string name="FuerzaX">X Force</string>
+    <string name="FuerzaY">Y Force</string>
+    <string name="peso">Peso:</string>
+    <string name="normal">Normal:</string>
+    <string name="fricci_n">Fricción:</string>
+    <string name="aceleraci_n">Aceleración:</string>
+    <string name="resultPeso">0</string>
+    <string name="resultNormal">0</string>
+    <string name="resultFriccion">0</string>
+    <string name="resultAceleracion">0</string>
+    <string name="resolver">RESOLVER</string>
+    <string name="desarrollado_por_czopi">Desarrollado por Czopi</string>
+    <string name="rampa">Rampa</string>
+    <string name="diagonal">Diagonal</string>
+    <string name="b_sico">Básico</string>
+    <string name="type">Tipo de Ejercicio</string>
+    <string name="force">Force</string>
+    <string name="angle">Angle</string>
+    <string name="resultXF">0</string>
+    <string name="rFuerzaX">Fuerza X</string>
+    <string name="rFuerzaY">Fuerza Y</string>
+    <string name="clock">clock</string>
+    <string name="rampStyle">Estilo de Rampa</string>
+    <string name="triangle1">Triangle1</string>
+    <string name="triangle2">Triangle2</string>
+    <string name="comocalcularangulo">comoCalcularAngulo</string>
+    <string name="continuar">Continuar</string>
+    <string name="flechacontinuar">FlechaContinuar</string>
+</resources>
