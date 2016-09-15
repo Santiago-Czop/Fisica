@@ -7,7 +7,6 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 
 public class ExDiagonalActivity extends AppCompatActivity {
@@ -47,7 +46,7 @@ public class ExDiagonalActivity extends AppCompatActivity {
     public void onClick (View view) {
         switch (view.getId()) {
             case R.id.bt1:
-                startActivity(new Intent(this, DiagonalActivity.class));
+                startActivity(new Intent(this, FlatDiagonalActivity.class));
                 break;
             default:
                 break;

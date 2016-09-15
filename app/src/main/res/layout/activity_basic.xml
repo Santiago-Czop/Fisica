@@ -3,7 +3,7 @@
     android:layout_height="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.example.administrador.fisica.BasicActivity"
+    tools:context=".FlatStraightActivity"
     android:orientation="vertical">
 
 <android.support.v7.widget.Toolbar

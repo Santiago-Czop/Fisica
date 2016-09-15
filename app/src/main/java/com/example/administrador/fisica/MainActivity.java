@@ -11,7 +11,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button bt1, bt2, bt3;
+    Button bt1, bt2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
         bt1 = (Button)findViewById(R.id.bt1);
         bt2 = (Button)findViewById(R.id.bt2);
-        bt3 = (Button)findViewById(R.id.bt3);
+
         Toolbar myToolbar = (Toolbar)findViewById(R.id.my_toolbar);
         setSupportActionBar(myToolbar);
         getSupportActionBar().setTitle("Física");
@@ -47,14 +47,10 @@ public class MainActivity extends AppCompatActivity {
     public void onClick(View view) {
         switch(view.getId()) {
             case R.id.bt1:
-                Intent basic = new Intent(this, BasicActivity.class);
-                startActivity(basic);
+                Intent flat = new Intent(this, FlatActivity.class);
+                startActivity(flat);
                 break;
             case R.id.bt2:
-                Intent diagonal = new Intent(this, ExDiagonalActivity.class);
-                startActivity(diagonal);
-                break;
-            case R.id.bt3:
                 Intent ramp = new Intent(this, RampActivity.class);
                 startActivity(ramp);
                 break;

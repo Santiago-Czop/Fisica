@@ -14,7 +14,7 @@ import android.widget.Toast;
 
 import java.text.DecimalFormat;
 
-public class DiagonalActivity extends AppCompatActivity {
+public class FlatDiagonalActivity extends AppCompatActivity {
 
     TextView tva, tvb, tvc, tvd, tvx, tvy;
     EditText et1, et2, et3, et4;

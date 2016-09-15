@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#ffffff"
+        android:padding="@dimen/activity_horizontal_margin">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Tipo de Fuerzas"
+            android:textStyle="italic"
+            android:textColor="@color/primary_text"
+            android:layout_marginBottom="5dp"
+            android:textSize="25sp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/green1"
+            android:onClick="onClick"
+            android:text="Recto"
+            android:layout_marginTop="5dp"
+            android:id="@+id/bt1"
+            android:textColor="@color/primary_text"
+            android:textSize="25sp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bt2"
+            android:background="@drawable/green2"
+            android:layout_marginTop="5dp"
+            android:onClick="onClick"
+            android:text="@string/diagonal"
+            android:textColor="@color/primary_text"
+            android:textSize="25sp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bt3"
+            android:background="@drawable/green1"
+            android:layout_marginTop="5dp"
+            android:onClick="onClick"
+            android:text="Combinado"
+            android:textColor="@color/primary_text"
+            android:textSize="25sp"/>
+
+
+    </LinearLayout>
+</LinearLayout>

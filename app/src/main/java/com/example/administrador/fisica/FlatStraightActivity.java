@@ -12,7 +12,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import java.text.DecimalFormat;
 
-public class BasicActivity extends AppCompatActivity {
+public class FlatStraightActivity extends AppCompatActivity {
 
     EditText et1, et2, et3, et4;
     TextView tva, tvb, tvc, tvd;
