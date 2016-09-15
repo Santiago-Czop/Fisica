@@ -16,21 +16,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".FlatStraightActivity"
-            android:parentActivityName=".MainActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.administrador.fisica.MainActivity" />
-        </activity>
-        <activity
             android:name=".RampActivity"
-            android:parentActivityName=".MainActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.administrador.fisica.MainActivity" />
-        </activity>
-        <activity
-            android:name=".FlatDiagonalActivity"
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -52,7 +38,6 @@
                 android:value="com.example.administrador.fisica.MainActivity" />
         </activity>
         <activity android:name=".FlatActivity" />
-        <activity android:name=".FlatCombinedActivity"></activity>
     </application>
 
 </manifest>

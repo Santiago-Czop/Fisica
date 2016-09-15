@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:layout_width="match_parent"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    android:orientation="vertical">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/my_toolbar"
@@ -12,53 +13,445 @@
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
         />
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:background="#ffffff"
         android:padding="@dimen/activity_horizontal_margin">
-        <TextView
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2dp"
+            android:visibility="visible">
+
+            <EditText
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/etA"
+                android:paddingRight="5dp"
+                android:hint="@string/Masa"
+                android:textColorHint="@color/secondary_text"
+                android:inputType="numberDecimal"
+                android:gravity="end"
+                android:layout_width="match_parent"
+                android:textColor="@color/primary_text"/>
+
+            <EditText
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/etB"
+                android:hint="@string/Mu"
+                android:textColorHint="#777777"
+                android:paddingRight="5dp"
+                android:gravity="end"
+                android:layout_width="match_parent"
+                android:inputType="numberDecimal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/green1"
+            android:layout_marginTop="10dp"
+            android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2dp"
+            android:id="@+id/l1"
+            android:visibility="visible">
+
+
+
+            <EditText
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/et1Y"
+                android:hint="@string/FuerzaY"
+                android:textColorHint="@color/secondary_text"
+                android:paddingRight="5dp"
+                android:gravity="end"
+                android:inputType="numberDecimal|numberSigned"
+                android:layout_width="match_parent"
+                android:textColor="@color/primary_text"
+                android:visibility="visible"/>
+
+            <EditText
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/et1X"
+                android:hint="@string/FuerzaX"
+                android:textColorHint="#777777"
+                android:paddingRight="5dp"
+                android:gravity="end"
+                android:layout_width="match_parent"
+                android:inputType="numberDecimal|numberSigned"
+                android:visibility="visible"/>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2dp"
+            android:id="@+id/l2"
+            android:visibility="visible">
+
+
+
+            <EditText
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/et2Y"
+                android:hint="@string/FuerzaY"
+                android:textColorHint="@color/secondary_text"
+                android:paddingRight="5dp"
+                android:gravity="end"
+                android:inputType="numberDecimal|numberSigned"
+                android:layout_width="match_parent"
+                android:textColor="@color/primary_text"
+                android:visibility="visible"/>
+
+            <EditText
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/et2X"
+                android:hint="@string/FuerzaX"
+                android:textColorHint="#777777"
+                android:paddingRight="5dp"
+                android:gravity="end"
+                android:layout_width="match_parent"
+                android:inputType="numberDecimal|numberSigned"
+                android:visibility="visible"/>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2dp"
+            android:id="@+id/l3"
+            android:visibility="visible">
+
+
+
+            <EditText
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/et3Y"
+                android:hint="@string/FuerzaY"
+                android:textColorHint="@color/secondary_text"
+                android:paddingRight="5dp"
+                android:gravity="end"
+                android:inputType="numberDecimal|numberSigned"
+                android:layout_width="match_parent"
+                android:textColor="@color/primary_text"
+                android:visibility="visible"/>
+
+            <EditText
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/et3X"
+                android:hint="@string/FuerzaX"
+                android:textColorHint="#777777"
+                android:paddingRight="5dp"
+                android:gravity="end"
+                android:layout_width="match_parent"
+                android:inputType="numberDecimal|numberSigned"
+                android:visibility="visible"/>
+
+
+
+        </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/green1"
+            android:layout_marginTop="10dp"
+            android:visibility="visible">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2dp"
+            android:id="@+id/l4"
+            android:visibility="visible">
+
+
+
+            <EditText
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/et4F"
+                android:hint="@string/force"
+                android:textColorHint="@color/secondary_text"
+                android:paddingRight="5dp"
+                android:gravity="end"
+                android:inputType="numberDecimal"
+                android:layout_width="match_parent"
+                android:textColor="@color/primary_text"
+                android:visibility="visible"/>
+
+            <EditText
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/et4A"
+                android:hint="@string/angle"
+                android:textColorHint="#777777"
+                android:paddingRight="5dp"
+                android:gravity="end"
+                android:layout_width="match_parent"
+                android:inputType="numberDecimal"
+                android:visibility="visible"/>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2dp"
+            android:id="@+id/l5"
+            android:visibility="visible">
+
+
+
+            <EditText
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/et5F"
+                android:hint="@string/force"
+                android:textColorHint="@color/secondary_text"
+                android:paddingRight="5dp"
+                android:gravity="end"
+                android:inputType="numberDecimal"
+                android:layout_width="match_parent"
+                android:textColor="@color/primary_text"
+                android:visibility="visible"/>
+
+            <EditText
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/et5A"
+                android:hint="@string/angle"
+                android:textColorHint="#777777"
+                android:paddingRight="5dp"
+                android:gravity="end"
+                android:layout_width="match_parent"
+                android:inputType="numberDecimal"
+                android:visibility="visible"/>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2dp"
+            android:id="@+id/l6"
+            android:visibility="visible">
+
+
+
+            <EditText
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/et6F"
+                android:hint="@string/force"
+                android:textColorHint="@color/secondary_text"
+                android:paddingRight="5dp"
+                android:gravity="end"
+                android:inputType="numberDecimal"
+                android:layout_width="match_parent"
+                android:textColor="@color/primary_text"
+                android:visibility="visible"/>
+
+            <EditText
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/et6A"
+                android:hint="@string/angle"
+                android:textColorHint="#777777"
+                android:paddingRight="5dp"
+                android:gravity="end"
+                android:layout_width="match_parent"
+                android:inputType="numberDecimal"
+                android:visibility="visible"/>
+
+
+
+        </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:background="@drawable/green2"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="@dimen/dimens_5"
+            android:paddingRight="@dimen/dimens_5">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:text="@string/peso"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:text="@string/FuerzaX"
+                    android:textSize="@dimen/dimens_25"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:text="@string/FuerzaY"
+                    android:textSize="@dimen/dimens_25"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:text="@string/normal"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:text="@string/fricci_n"
+                    android:textSize="25sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:text="@string/aceleraci_n"
+                    android:textSize="25sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/resultPeso"
+                    android:textSize="@dimen/dimens_25"
+                    android:layout_margin="3dp"
+                    android:gravity="end"
+                    android:id="@+id/tva"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="@dimen/dimens_25"
+                    android:layout_margin="@dimen/dimens_3"
+                    android:gravity="end"
+                    android:id="@+id/tvx"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="@dimen/dimens_25"
+                    android:layout_margin="@dimen/dimens_3"
+                    android:gravity="end"
+                    android:id="@+id/tvy"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/resultNormal"
+                    android:textSize="25sp"
+                    android:layout_margin="3dp"
+                    android:gravity="end"
+                    android:id="@+id/tvb"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/resultFriccion"
+                    android:textSize="25sp"
+                    android:layout_margin="3dp"
+                    android:gravity="end"
+                    android:id="@+id/tvc"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/resultAceleracion"
+                    android:layout_margin="3dp"
+                    android:textSize="25sp"
+                    android:gravity="end"
+                    android:id="@+id/tvd"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="@string/resolver"
+            android:textColor="@color/icons"
+            android:padding="8dp"
+            android:textSize="30sp"
             android:layout_gravity="center"
-            android:text="Tipo de Fuerzas"
-            android:textStyle="italic"
-            android:textColor="@color/primary_text"
-            android:layout_marginBottom="5dp"
-            android:textSize="25sp"/>
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/green1"
+            android:elevation="4dp"
             android:onClick="onClick"
-            android:text="Recto"
-            android:layout_marginTop="5dp"
             android:id="@+id/bt1"
-            android:textColor="@color/primary_text"
-            android:textSize="25sp"/>
-        <Button
+            android:background="@drawable/green3"/>
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/bt2"
-            android:background="@drawable/green2"
-            android:layout_marginTop="5dp"
-            android:onClick="onClick"
-            android:text="@string/diagonal"
-            android:textColor="@color/primary_text"
-            android:textSize="25sp"/>
-        <Button
+            android:padding="@dimen/dimens_4"
+            android:text="Considerar la dirección de las fuerzas"
+            android:textSize="15sp"
+            android:textColor="@color/secondary_text"
+            android:gravity="center|top"/>
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/bt3"
-            android:background="@drawable/green1"
-            android:layout_marginTop="5dp"
-            android:onClick="onClick"
-            android:text="Combinado"
-            android:textColor="@color/primary_text"
-            android:textSize="25sp"/>
-
+            android:padding="@dimen/dimens_3"
+            android:text="Tocar doble el punto para poner un menos"
+            android:textSize="15sp"
+            android:textColor="@color/secondary_text"
+            android:gravity="center|top"/>
 
     </LinearLayout>
+    </ScrollView>
 </LinearLayout>
