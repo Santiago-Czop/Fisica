@@ -33,7 +33,7 @@
         android:layout_height="wrap_content"
         android:background="@drawable/green1"
         android:onClick="onClick"
-        android:text="@string/b_sico"
+        android:text="PLANO"
         android:layout_marginTop="5dp"
         android:id="@+id/bt1"
         android:textColor="@color/primary_text"
@@ -45,21 +45,10 @@
         android:background="@drawable/green2"
         android:layout_marginTop="5dp"
         android:onClick="onClick"
-        android:text="@string/diagonal"
+        android:text="Rampa"
         android:textColor="@color/primary_text"
         android:textSize="25sp"/>
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/bt3"
-        android:background="@drawable/green1"
-        android:layout_marginTop="5dp"
-        android:onClick="onClick"
-        android:text="@string/rampa"
-        android:textColor="@color/primary_text"
-        android:textSize="25sp"/>
-
-        <TextView
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:padding="5dp"

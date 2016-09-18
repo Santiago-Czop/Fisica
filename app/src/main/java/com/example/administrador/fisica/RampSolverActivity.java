@@ -16,7 +16,7 @@ import java.text.DecimalFormat;
 
 public class RampSolverActivity extends AppCompatActivity {
 
-    EditText et1, et2, et3, et4;
+    EditText et1, et2, et3, et4, et5;
     TextView tva, tvb, tvc, tvd, tvx, tvy;
     Button bt1;
     DecimalFormat df = new DecimalFormat("#.###");
@@ -34,6 +34,7 @@ public class RampSolverActivity extends AppCompatActivity {
         et2 = (EditText)findViewById(R.id.et2);
         et3 = (EditText)findViewById(R.id.et3);
         et4 = (EditText)findViewById(R.id.et4);
+        et5 = (EditText)findViewById(R.id.et5);
         tva = (TextView)findViewById(R.id.tva);
         tvb = (TextView)findViewById(R.id.tvb);
         tvc = (TextView)findViewById(R.id.tvc);
@@ -80,33 +81,36 @@ public class RampSolverActivity extends AppCompatActivity {
                     m1 = et1.getText().toString();
                 }
                 double m = Double.parseDouble(m1);
-                String f1 = et2.getText().toString();
-                if (f1.equals("")) {
-                    et2.setText("0");
-                    f1 = et2.getText().toString();
-                }
-                double f = Double.parseDouble(f1);
-                String angle1 = et3.getText().toString();
+                String angle1 = et2.getText().toString();
                 if (angle1.equals("")) {
-                    et3.setText("0");
-                    angle1 = et3.getText().toString();
+                    et2.setText("0");
+                    angle1 = et2.getText().toString();
                 }
                 double preAngle = Double.parseDouble(angle1);
                 if (preAngle >= 90.0) {
                     Toast.makeText(this, "Ángulo no válido", Toast.LENGTH_LONG).show();
-                    et3.setText("0");
+                    et2.setText("0");
                     return;
                 }
                 double angle = 90.0 - preAngle;
-                String mu1 = et4.getText().toString();
+                String mu1 = et3.getText().toString();
                 if (mu1.equals("")) {
-                    et4.setText("0");
-                    mu1 = et4.getText().toString();
+                    et3.setText("0");
+                    mu1 = et3.getText().toString();
                 }
                 double mu = Double.parseDouble(mu1);
-
-                double fx;
-                double fy;
+                String fy1 = et4.getText().toString();
+                if (fy1.equals("")) {
+                    et4.setText("0");
+                    fy1 = et4.getText().toString();
+                }
+                double fy = Double.parseDouble(fy1);
+                String fx1 = et5.getText().toString();
+                if (fx1.equals("")) {
+                    et5.setText("0");
+                    fx1 = et5.getText().toString();
+                }
+                double fx = Double.parseDouble(fx1);
                 double weight;
                 double normal;
                 double friction;
@@ -115,10 +119,10 @@ public class RampSolverActivity extends AppCompatActivity {
                 weight = m * -9.8;
                 tva.setText(df.format(weight) + "N");
 
-                fy = Math.sin(Math.toRadians(angle)) * weight;
+                fy += Math.sin(Math.toRadians(angle)) * weight;
                 tvy.setText(df.format(fy) + "N");
 
-                fx = (Math.cos(Math.toRadians(angle)) * -weight * pendiente) + f;
+                fx += (Math.cos(Math.toRadians(angle)) * -weight * pendiente);
                 tvx.setText(df.format(fx) + "N");
 
                 normal = -fy;
