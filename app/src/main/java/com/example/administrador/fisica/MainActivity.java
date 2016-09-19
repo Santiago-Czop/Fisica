@@ -11,15 +11,10 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button bt1, bt2;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        bt1 = (Button)findViewById(R.id.bt1);
-        bt2 = (Button)findViewById(R.id.bt2);
 
         Toolbar myToolbar = (Toolbar)findViewById(R.id.my_toolbar);
         setSupportActionBar(myToolbar);

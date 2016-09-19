@@ -21,8 +21,10 @@
     <string name="force">Force</string>
     <string name="angle">Angle</string>
     <string name="resultXF">0</string>
-    <string name="rFuerzaX">Fuerza X</string>
-    <string name="rFuerzaY">Fuerza Y</string>
+    <string name="rFuerzaX">Fuerza X:</string>
+    <string name="rFuerzaY">Fuerza Y:</string>
+    <string name="rPesoX">Peso X:</string>
+    <string name="rPesoY">Peso Y:</string>
     <string name="clock">clock</string>
     <string name="rampStyle">Estilo de Rampa</string>
     <string name="triangle1">Triangle1</string>
@@ -30,4 +32,10 @@
     <string name="comocalcularangulo">comoCalcularAngulo</string>
     <string name="continuar">Continuar</string>
     <string name="flechacontinuar">FlechaContinuar</string>
+    <string name="considerForces">Considerar la dirección de las fuerzas</string>
+    <string name="touchDouble">Tocar doble el punto para poner un menos</string>
+    <string name="resultYForce">0</string>
+    <string name="resultXForce">0</string>
+    <string name="resultPesoX">0</string>
+    <string name="resultPesoY">0</string>
 </resources>
