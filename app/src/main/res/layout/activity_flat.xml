@@ -53,14 +53,105 @@
                 android:inputType="numberDecimal" />
 
         </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:padding="@dimen/dimens_5"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/dimens_5"
+                android:drawableLeft="@drawable/ic_add_circle_lightblue_24dp"
+                android:text="@string/FuerzaY"
+                android:id="@+id/yplus"
+                android:onClick="onClick"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:layout_weight="1"
+                android:padding="@dimen/dimens_5"
+                android:layout_margin="@dimen/dimens_5"
+                android:drawableLeft="@drawable/ic_remove_circle_lightblue_24dp"
+                android:text="@string/FuerzaY"
+                android:id="@+id/yminus"
+                android:onClick="onClick"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/dimens_5"
+                android:padding="@dimen/dimens_5"
+                android:drawableLeft="@drawable/ic_add_circle_lightblue_24dp"
+                android:text="@string/FuerzaX"
+                android:id="@+id/xplus"
+                android:onClick="onClick"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/dimens_5"
+                android:padding="@dimen/dimens_5"
+                android:drawableLeft="@drawable/ic_remove_circle_lightblue_24dp"
+                android:text="@string/FuerzaX"
+                android:id="@+id/xminus"
+                android:onClick="onClick"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/dimens_5"
+                android:padding="@dimen/dimens_5"
+                android:drawableLeft="@drawable/ic_add_circle_lightblue_24dp"
+                android:text="@string/force"
+                android:id="@+id/dplus"
+                android:onClick="onClick"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/dimens_5"
+                android:padding="@dimen/dimens_5"
+                android:drawableLeft="@drawable/ic_remove_circle_lightblue_24dp"
+                android:text="@string/force"
+                android:id="@+id/dminus"
+                android:onClick="onClick"/>
+
+
+        </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:background="@drawable/green1"
-            android:layout_marginTop="10dp"
-            android:visibility="visible">
+            android:id="@+id/xychart"
+            android:visibility="gone">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -68,7 +159,7 @@
             android:orientation="horizontal"
             android:padding="2dp"
             android:id="@+id/l1"
-            android:visibility="visible">
+            android:visibility="gone">
 
 
 
@@ -83,7 +174,7 @@
                 android:inputType="numberDecimal|numberSigned"
                 android:layout_width="match_parent"
                 android:textColor="@color/primary_text"
-                android:visibility="visible"/>
+                android:visibility="gone"/>
 
             <EditText
                 android:layout_weight="1"
@@ -95,7 +186,7 @@
                 android:gravity="end"
                 android:layout_width="match_parent"
                 android:inputType="numberDecimal|numberSigned"
-                android:visibility="visible"/>
+                android:visibility="gone"/>
 
 
 
@@ -106,7 +197,7 @@
             android:orientation="horizontal"
             android:padding="2dp"
             android:id="@+id/l2"
-            android:visibility="visible">
+            android:visibility="gone">
 
 
 
@@ -121,7 +212,7 @@
                 android:inputType="numberDecimal|numberSigned"
                 android:layout_width="match_parent"
                 android:textColor="@color/primary_text"
-                android:visibility="visible"/>
+                android:visibility="gone"/>
 
             <EditText
                 android:layout_weight="1"
@@ -133,7 +224,7 @@
                 android:gravity="end"
                 android:layout_width="match_parent"
                 android:inputType="numberDecimal|numberSigned"
-                android:visibility="visible"/>
+                android:visibility="gone"/>
 
 
 
@@ -144,7 +235,7 @@
             android:orientation="horizontal"
             android:padding="2dp"
             android:id="@+id/l3"
-            android:visibility="visible">
+            android:visibility="gone">
 
 
 
@@ -159,7 +250,7 @@
                 android:inputType="numberDecimal|numberSigned"
                 android:layout_width="match_parent"
                 android:textColor="@color/primary_text"
-                android:visibility="visible"/>
+                android:visibility="gone"/>
 
             <EditText
                 android:layout_weight="1"
@@ -171,7 +262,7 @@
                 android:gravity="end"
                 android:layout_width="match_parent"
                 android:inputType="numberDecimal|numberSigned"
-                android:visibility="visible"/>
+                android:visibility="gone"/>
 
 
 
@@ -184,7 +275,8 @@
             android:orientation="vertical"
             android:background="@drawable/green1"
             android:layout_marginTop="10dp"
-            android:visibility="visible">
+            android:id="@+id/dchart"
+            android:visibility="gone">
 
 
         <LinearLayout
@@ -193,9 +285,7 @@
             android:orientation="horizontal"
             android:padding="2dp"
             android:id="@+id/l4"
-            android:visibility="visible">
-
-
+            android:visibility="gone">
 
             <EditText
                 android:layout_weight="1"
@@ -208,7 +298,7 @@
                 android:inputType="numberDecimal"
                 android:layout_width="match_parent"
                 android:textColor="@color/primary_text"
-                android:visibility="visible"/>
+                android:visibility="gone"/>
 
             <EditText
                 android:layout_weight="1"
@@ -220,7 +310,7 @@
                 android:gravity="end"
                 android:layout_width="match_parent"
                 android:inputType="numberDecimal"
-                android:visibility="visible"/>
+                android:visibility="gone"/>
 
 
 
@@ -231,7 +321,7 @@
             android:orientation="horizontal"
             android:padding="2dp"
             android:id="@+id/l5"
-            android:visibility="visible">
+            android:visibility="gone">
 
 
 
@@ -246,7 +336,7 @@
                 android:inputType="numberDecimal"
                 android:layout_width="match_parent"
                 android:textColor="@color/primary_text"
-                android:visibility="visible"/>
+                android:visibility="gone"/>
 
             <EditText
                 android:layout_weight="1"
@@ -258,7 +348,7 @@
                 android:gravity="end"
                 android:layout_width="match_parent"
                 android:inputType="numberDecimal"
-                android:visibility="visible"/>
+                android:visibility="gone"/>
 
 
 
@@ -269,9 +359,7 @@
             android:orientation="horizontal"
             android:padding="2dp"
             android:id="@+id/l6"
-            android:visibility="visible">
-
-
+            android:visibility="gone">
 
             <EditText
                 android:layout_weight="1"
@@ -284,7 +372,7 @@
                 android:inputType="numberDecimal"
                 android:layout_width="match_parent"
                 android:textColor="@color/primary_text"
-                android:visibility="visible"/>
+                android:visibility="gone"/>
 
             <EditText
                 android:layout_weight="1"
@@ -296,7 +384,7 @@
                 android:gravity="end"
                 android:layout_width="match_parent"
                 android:inputType="numberDecimal"
-                android:visibility="visible"/>
+                android:visibility="gone"/>
 
 
 

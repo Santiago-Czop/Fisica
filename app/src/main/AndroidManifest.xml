@@ -37,7 +37,12 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.administrador.fisica.MainActivity" />
         </activity>
-        <activity android:name=".FlatActivity" />
+        <activity android:name=".FlatActivity"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.administrador.fisica.MainActivity"/>
+        </activity>
     </application>
 
 </manifest>

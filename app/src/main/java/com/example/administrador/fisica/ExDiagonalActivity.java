@@ -46,7 +46,7 @@ public class ExDiagonalActivity extends AppCompatActivity {
     public void onClick (View view) {
         switch (view.getId()) {
             case R.id.bt1:
-                startActivity(new Intent(this, FlatDiagonalActivity.class));
+                //startActivity(new Intent(this, FlatDiagonalActivity.class));
                 break;
             default:
                 break;
