@@ -296,11 +296,13 @@ public class RampSolverActivity extends AppCompatActivity {
                 double friction = mu*normal;
                 tvc.setText(df.format(friction) + "N");
 
+                double fpx = fx + weightX;
+
                 double a;
-                if (Math.abs(friction) >= Math.abs(fx)) {
+                if (Math.abs(friction) >= Math.abs(fpx)) {
                     a = 0.0;
                 } else {
-                    a = (Math.signum(fx) * (Math.abs(fx) - friction)) / m;
+                    a = (Math.signum(fpx) * (Math.abs(fpx) - friction)) / m;
                 }
                 tvd.setText(df.format(a));
                 break;
